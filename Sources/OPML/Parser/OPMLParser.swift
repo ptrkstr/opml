@@ -3,7 +3,7 @@ import Foundation
 import FoundationXML
 #endif
 
-final class OPMLParser: NSObject {
+public final class OPMLParser: NSObject {
 
 	private let xmlParser: XMLParser
 
