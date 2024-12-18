@@ -13,7 +13,7 @@ public final class OPMLParser: NSObject {
 
 	fileprivate let opmlBuilder = OPMLBuilder()
 
-	func parse() throws -> OPML {
+	public func parse() throws -> OPML {
 		xmlParser.delegate = self
 		let success = xmlParser.parse()
 		if !success {
