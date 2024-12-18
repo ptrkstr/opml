@@ -26,7 +26,7 @@ final class OPMLParser: NSObject {
 		return try opmlBuilder.opml()
 	}
 
-	init(_ data: Data) {
+	public init(_ data: Data) {
 		xmlParser = XMLParser(data: data)
 		super.init()
 	}
